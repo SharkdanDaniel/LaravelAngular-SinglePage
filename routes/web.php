@@ -14,5 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
+});
+
+Route::get('{a}/{b?}/{c?}/{d?}{e?}{f?}', function () {
+    return view('index');
 });
